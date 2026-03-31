@@ -1,0 +1,444 @@
+/* Auto Finance System - Complete CSS */
+
+/* Mode Selection Screen */
+.ai-mode-selection {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px;
+}
+
+.ai-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.back-dashboard-btn {
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.back-dashboard-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(-5px);
+}
+
+.ai-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 25px;
+  border-radius: 60px;
+  backdrop-filter: blur(10px);
+}
+
+.ai-icon {
+  font-size: 32px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.ai-title h1 {
+  color: white;
+  font-size: 28px;
+  margin: 0;
+}
+
+.mode-selection-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-message {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.welcome-avatar {
+  font-size: 64px;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.welcome-message h2 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.welcome-message p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+}
+
+.mode-cards-ai {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.mode-card-ai {
+  background: white;
+  border-radius: 30px;
+  padding: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.mode-card-ai::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.mode-card-ai:hover::before {
+  transform: scaleX(1);
+}
+
+.mode-card-ai:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.mode-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.mode-card-ai h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.mode-description {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.mode-features {
+  text-align: left;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.feature {
+  padding: 8px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.mode-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+/* Main Finance Container */
+.automatic-finance-modern {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 30px;
+  min-height: 80vh;
+}
+
+.finance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn-modern {
+  padding: 10px 20px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.back-btn-modern:hover {
+  background: #e0e0e0;
+  transform: translateX(-3px);
+}
+
+.mode-indicator-modern {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 40px;
+}
+
+.mode-label {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+}
+
+.mode-value {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Progress Steps */
+.progress-steps-modern {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.step-circle {
+  width: 50px;
+  height: 50px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.step-item.active .step-circle {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.step-label {
+  font-size: 12px;
+  color: #999;
+  font-weight: 500;
+}
+
+.step-item.active .step-label {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.step-line {
+  flex: 1;
+  height: 3px;
+  background: #e0e0e0;
+  margin: 0 10px;
+  transition: all 0.3s;
+}
+
+.step-line.active {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+/* Step Content */
+.step-content-modern {
+  background: white;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.step-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Forms */
+.personal-info-form,
+.expenses-form {
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-field input {
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.form-field input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-field input:hover {
+  border-color: #667eea;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.continue-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.button-group .back-btn-modern {
+  padding: 16px 32px;
+}
+
+.button-group .continue-btn {
+  width: auto;
+  padding: 16px 32px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ai-mode-selection {
+    padding: 20px;
+  }
+  
+  .welcome-message h2 {
+    font-size: 24px;
+  }
+  
+  .mode-cards-ai {
+    grid-template-columns: 1fr;
+  }
+  
+  .progress-steps-modern {
+    padding: 20px;
+  }
+  
+  .step-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .step-label {
+    font-size: 10px;
+  }
+  
+  .step-content-modern {
+    padding: 20px;
+  }
+  
+  .step-title {
+    font-size: 22px;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .button-group .continue-btn,
+  .button-group .back-btn-modern {
+    width: 100%;
+  }
+}
